@@ -48,9 +48,9 @@ snap_amazon_fine_food_reviews_path = kagglehub.dataset_download('snap/amazon-fin
 
 ### Step 5: Result Comparison
 
--Merged outputs from both models
--Compared scores using seaborn pairplot
--Explored misaligned examples: 1-star with positive sentiment, 5-star with negative sentiment
+- Merged outputs from both models
+- Compared scores using seaborn pairplot
+- Explored misaligned examples: 1-star with positive sentiment, 5-star with negative sentiment
 
 **## Model Evaluation**
 
@@ -71,7 +71,7 @@ print(classification_report(y_true, y_pred))
 - Use stratified sampling to balance class distribution.
 - Extend the model to support multilingual sentiment analysis (see below).
 
-**🌍 Multilingual Extension**
+**##🌍 Multilingual Extension**
 
 ✅ Use a multilingual model:
 ```python
@@ -88,11 +88,11 @@ MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 💡 Insight
 Multilingual transformers like XLM-RoBERTa allow you to maintain one model for many languages, enabling global scalability without sacrificing context.
 
-**📁 Files**
-File	Description
-Reviews.csv	Amazon Fine Food Reviews
-notebook.ipynb	Jupyter Notebook with full pipeline
-README.md	Project documentation
+**##📁 Files**
+. File	Description
+. Reviews.csv	Amazon Fine Food Reviews
+. notebook.ipynb	Jupyter Notebook with full pipeline
+. README.md	Project documentation
 
 ## Requirements
 pip install pandas numpy matplotlib seaborn nltk tqdm transformers scipy kagglehub
