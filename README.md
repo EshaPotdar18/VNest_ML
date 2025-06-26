@@ -18,13 +18,13 @@ Build an end-to-end sentiment classification pipeline using both **NLTK** and **
 
 /notebooks/
 │
-├── sentiment_analysis_pipeline.ipynb # Complete pipeline: EDA, NLTK, VADER, RoBERTa, comparison, evaluation
+- ├── sentiment_analysis_pipeline.ipynb # Complete pipeline: EDA, NLTK, VADER, RoBERTa, comparison, evaluation
 │
 /data/
-├── Reviews.csv # Subset (500 samples) of Amazon reviews
+- ├── Reviews.csv # Subset (500 samples) of Amazon reviews
 │
 Root Files
-├── README.md # This file
+- ├── README.md # This file
 
 ---
 
