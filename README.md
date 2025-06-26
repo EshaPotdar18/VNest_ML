@@ -117,7 +117,7 @@ MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 - README.md	Project documentation
 
 ## 📝 Requirements
-'''python
+```python
 pandas
 numpy
 matplotlib
@@ -127,12 +127,12 @@ tqdm
 transformers
 scipy
 kagglehub
-'''
+```
 ## Expected Deliverables
-✅ Complete notebook with analysis
-✅ Evaluation metrics with comparison plots
-✅ Insights report (model_report.md)
-✅ Optional multilingual proposal
+- Complete notebook with analysis
+- Evaluation metrics with comparison plots
+- Insights report (model_report.md)
+- Optional multilingual proposal
 
 ## Author
 - Final-year Computer Science Engineer
