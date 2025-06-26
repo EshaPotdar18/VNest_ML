@@ -71,7 +71,7 @@ print(classification_report(y_true, y_pred))
 - Use stratified sampling to balance class distribution.
 - Extend the model to support multilingual sentiment analysis (see below).
 
-**##🌍 Multilingual Extension**
+**🌍 Multilingual Extension**
 
 ✅ Use a multilingual model:
 ```python
@@ -88,7 +88,7 @@ MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 **💡 Insight**
 - Multilingual transformers like XLM-RoBERTa allow you to maintain one model for many languages, enabling global scalability without sacrificing context.
 
-**##📁 Files**
+**📁 Files**
 - File	Description
 - Reviews.csv	Amazon Fine Food Reviews
 - notebook.ipynb	Jupyter Notebook with full pipeline
