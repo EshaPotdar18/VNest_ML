@@ -5,26 +5,25 @@ Build an end-to-end sentiment classification pipeline using both **NLTK** and **
 
 ## 📋 Task Overview
 
-- ✅ Select a labeled dataset (`Amazon Fine Food Reviews`)
-- ✅ Perform EDA and visualization of class distribution
-- ✅ Run rule-based sentiment scoring using VADER
-- ✅ Run transformer-based scoring using RoBERTa
-- ✅ Compare model predictions and evaluate
-- ✅ Visualize model agreement and disagreement
-- ✅ Bonus: Discuss multilingual extension strategy
+- Select a labeled dataset (`Amazon Fine Food Reviews`)
+- Perform EDA and visualization of class distribution
+- Run rule-based sentiment scoring using VADER
+- Run transformer-based scoring using RoBERTa
+- Compare model predictions and evaluate
+- Visualize model agreement and disagreement
+- Bonus: Discuss multilingual extension strategy
 
 
 ## 📁 Project Structure
 
 /notebooks/
-│
-- ├── sentiment_analysis_pipeline.ipynb # Complete pipeline: EDA, NLTK, VADER, RoBERTa, comparison, evaluation
-│
+├── sentiment_analysis_pipeline.ipynb # Complete pipeline: EDA, NLTK, VADER, RoBERTa, comparison, evaluation
+
 /data/
-- ├── Reviews.csv # Subset (500 samples) of Amazon reviews
-│
+├── Reviews.csv # Subset (500 samples) of Amazon reviews
+
 Root Files
-- ├── README.md # This file
+├── README.md # This file
 
 ---
 
