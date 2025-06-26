@@ -1,4 +1,4 @@
-# VNest_ML
+# VNest_ML/NLP Engineer Intern Task
 # Text Classification Pipeline – Sentiment Analysis on Amazon Reviews
 
 A complete NLP pipeline project for sentiment analysis using both **rule-based** (`VADER`) and **transformer-based** (`RoBERTa`) models on the **Amazon Fine Food Reviews** dataset. This is designed for testing real-world skills in data preprocessing, model evaluation, and NLP tooling as part of an **ML/NLP Engineer Intern** task.
@@ -85,19 +85,19 @@ MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 - Fine-tune the model on mixed-language datasets.
 - Use a language detector (e.g., langdetect, langid, or Hugging Face papluca/xlm-roberta-base-language-detection) to switch models dynamically.
 
-💡 Insight
-Multilingual transformers like XLM-RoBERTa allow you to maintain one model for many languages, enabling global scalability without sacrificing context.
+**💡 Insight**
+- Multilingual transformers like XLM-RoBERTa allow you to maintain one model for many languages, enabling global scalability without sacrificing context.
 
 **##📁 Files**
-. File	Description
-. Reviews.csv	Amazon Fine Food Reviews
-. notebook.ipynb	Jupyter Notebook with full pipeline
-. README.md	Project documentation
+- File	Description
+- Reviews.csv	Amazon Fine Food Reviews
+- notebook.ipynb	Jupyter Notebook with full pipeline
+- README.md	Project documentation
 
 ## Requirements
-pip install pandas numpy matplotlib seaborn nltk tqdm transformers scipy kagglehub
+- pip install pandas numpy matplotlib seaborn nltk tqdm transformers scipy kagglehub
 
 ## Author
-Esha Potdar
-ML/NLP Engineer Intern Task
-Made using Python, NLTK, and Hugging Face 🤗
+- Esha Potdar
+- ML/NLP Engineer Intern Task
+- Made using Python, NLTK, and Hugging Face 🤗
