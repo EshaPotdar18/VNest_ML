@@ -20,32 +20,32 @@ A complete NLP pipeline project for sentiment analysis using both **rule-based**
 ```python
 import kagglehub
 snap_amazon_fine_food_reviews_path = kagglehub.dataset_download('snap/amazon-fine-food-reviews')
-
-**### Step 1: Load & Explore Data**
+```
+### Step 1: Load & Explore Data
 ```python
 Load reviews from Reviews.csv
 
 Quick EDA using seaborn & matplotlib
 
 Visualize distribution of star ratings
-
-**### Step 2: NLTK Tokenization & Named Entity Recognition**
+```
+### Step 2: NLTK Tokenization & Named Entity Recognition
 ```python
 Tokenization using TreebankWordTokenizer
 
 POS tagging
 
 Named Entity Recognition using maxent_ne_chunker
-
-**### Step 3: Rule-Based Sentiment (VADER)**
+```
+### Step 3: Rule-Based Sentiment (VADER)
 ```python
 SentimentIntensityAnalyzer from NLTK
 
 Produces neg, neu, pos, and compound scores
 
 Visualized sentiment scores across ratings
-
-**### Step 4: Transformer-Based Sentiment (RoBERTa)**
+```
+### Step 4: Transformer-Based Sentiment (RoBERTa)
 ```python
 Model: cardiffnlp/twitter-roberta-base-sentiment
 
@@ -54,8 +54,8 @@ Tokenized using AutoTokenizer and scored using AutoModelForSequenceClassificatio
 Applied softmax to raw logits
 
 Compared RoBERTa scores to VADER
-
-**### Step 5: Result Comparison**
+```
+### Step 5: Result Comparison
 ```python
 Merged outputs from both models
 
@@ -71,8 +71,8 @@ from sklearn.metrics import classification_report
 y_true = results_df['Score'].apply(lambda x: 'positive' if x > 3 else 'negative')
 y_pred = results_df['roberta_pos'].apply(lambda x: 'positive' if x > 0.5 else 'negative')
 print(classification_report(y_true, y_pred))
-
-**## Model Insights**
+```
+## Model Insights
 VADER is quick and rule-based, but lacks deep contextual understanding.
 RoBERTa shows much better context-aware performance.
 Edge cases revealed mismatches between star ratings and sentiment.
@@ -88,8 +88,8 @@ Extend the model to support multilingual sentiment analysis (see below).
 MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 Supports over 100 languages.
 Works well on non-English product reviews or multilingual social media posts.
-
-**## Additional Steps**
+```
+## Additional Steps
 Include multilingual samples via translation (e.g., googletrans) or public datasets like amazon-massive, paws-x.
 Fine-tune the model on mixed-language datasets.
 Use a language detector (e.g., langdetect, langid, or Hugging Face papluca/xlm-roberta-base-language-detection) to switch models dynamically.
@@ -103,10 +103,10 @@ Reviews.csv	Amazon Fine Food Reviews
 notebook.ipynb	Jupyter Notebook with full pipeline
 README.md	Project documentation
 
-**## Requirements**
+## Requirements
 pip install pandas numpy matplotlib seaborn nltk tqdm transformers scipy kagglehub
 
-**## Author**
+## Author
 Esha Potdar
 ML/NLP Engineer Intern Task
 Made using Python, NLTK, and Hugging Face 🤗
