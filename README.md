@@ -1,7 +1,30 @@
-# VNest_ML/NLP Engineer Intern Task
-# Text Classification Pipeline – Sentiment Analysis on Amazon Reviews
+# 🤖 ML/NLP Engineer Intern Challenge – Sentiment Classification on Amazon Reviews
 
-A complete NLP pipeline project for sentiment analysis using both **rule-based** (`VADER`) and **transformer-based** (`RoBERTa`) models on the **Amazon Fine Food Reviews** dataset. This is designed for testing real-world skills in data preprocessing, model evaluation, and NLP tooling as part of an **ML/NLP Engineer Intern** task.
+## 🎯 Objective  
+Build an end-to-end sentiment classification pipeline using both **NLTK** and **Hugging Face Transformers**. Showcase skills in data preprocessing, rule-based vs. transformer-based sentiment scoring, evaluation, and multilingual extension.
+
+## 📋 Task Overview
+
+- ✅ Select a labeled dataset (`Amazon Fine Food Reviews`)
+- ✅ Perform EDA and visualization of class distribution
+- ✅ Run rule-based sentiment scoring using VADER
+- ✅ Run transformer-based scoring using RoBERTa
+- ✅ Compare model predictions and evaluate
+- ✅ Visualize model agreement and disagreement
+- ✅ Bonus: Discuss multilingual extension strategy
+
+
+## 📁 Project Structure
+
+/notebooks/
+│
+├── sentiment_analysis_pipeline.ipynb # Complete pipeline: EDA, NLTK, VADER, RoBERTa, comparison, evaluation
+│
+/data/
+├── Reviews.csv # Subset (500 samples) of Amazon reviews
+│
+Root Files
+├── README.md # This file
 
 ---
 
@@ -94,10 +117,25 @@ MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 - notebook.ipynb	Jupyter Notebook with full pipeline
 - README.md	Project documentation
 
-## Requirements
-- pip install pandas numpy matplotlib seaborn nltk tqdm transformers scipy kagglehub
+## 📝 Requirements
+'''python
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+tqdm
+transformers
+scipy
+kagglehub
+'''
+## Expected Deliverables
+✅ Complete notebook with analysis
+✅ Evaluation metrics with comparison plots
+✅ Insights report (model_report.md)
+✅ Optional multilingual proposal
 
 ## Author
-- Esha Potdar
-- ML/NLP Engineer Intern Task
+- Final-year Computer Science Engineer
+- Passionate about NLP, multilingual modeling, and practical AI solutions
 - Made using Python, NLTK, and Hugging Face 🤗
