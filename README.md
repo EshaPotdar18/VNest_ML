@@ -22,6 +22,7 @@ import kagglehub
 snap_amazon_fine_food_reviews_path = kagglehub.dataset_download('snap/amazon-fine-food-reviews')
 
 **### Step 1: Load & Explore Data**
+```python
 Load reviews from Reviews.csv
 
 Quick EDA using seaborn & matplotlib
@@ -29,6 +30,7 @@ Quick EDA using seaborn & matplotlib
 Visualize distribution of star ratings
 
 **### Step 2: NLTK Tokenization & Named Entity Recognition**
+```python
 Tokenization using TreebankWordTokenizer
 
 POS tagging
@@ -36,6 +38,7 @@ POS tagging
 Named Entity Recognition using maxent_ne_chunker
 
 **### Step 3: Rule-Based Sentiment (VADER)**
+```python
 SentimentIntensityAnalyzer from NLTK
 
 Produces neg, neu, pos, and compound scores
@@ -43,6 +46,7 @@ Produces neg, neu, pos, and compound scores
 Visualized sentiment scores across ratings
 
 **### Step 4: Transformer-Based Sentiment (RoBERTa)**
+```python
 Model: cardiffnlp/twitter-roberta-base-sentiment
 
 Tokenized using AutoTokenizer and scored using AutoModelForSequenceClassification
@@ -52,6 +56,7 @@ Applied softmax to raw logits
 Compared RoBERTa scores to VADER
 
 **### Step 5: Result Comparison**
+```python
 Merged outputs from both models
 
 Compared scores using seaborn pairplot
@@ -59,6 +64,7 @@ Compared scores using seaborn pairplot
 Explored misaligned examples: 1-star with positive sentiment, 5-star with negative sentiment
 
 **## Model Evaluation**
+```python
 Evaluated the RoBERTa sentiment predictions by mapping star ratings to binary sentiment (positive if score > 3):
 
 from sklearn.metrics import classification_report
@@ -77,7 +83,7 @@ Use stratified sampling to balance class distribution.
 Extend the model to support multilingual sentiment analysis (see below).
 
 **🌍 Multilingual Extension**
-
+```python
 ✅ Use a multilingual model:
 MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 Supports over 100 languages.
