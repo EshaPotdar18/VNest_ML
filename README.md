@@ -22,13 +22,11 @@ import kagglehub
 snap_amazon_fine_food_reviews_path = kagglehub.dataset_download('snap/amazon-fine-food-reviews')
 ```
 ### Step 1: Load & Explore Data
-```python
-Load reviews from Reviews.csv
 
-Quick EDA using seaborn & matplotlib
+- Load reviews from Reviews.csv
+- Quick EDA using seaborn & matplotlib
+- Visualize distribution of star ratings
 
-Visualize distribution of star ratings
-```
 ### Step 2: NLTK Tokenization & Named Entity Recognition
 ```python
 Tokenization using TreebankWordTokenizer
