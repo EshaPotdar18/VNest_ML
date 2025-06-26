@@ -58,49 +58,34 @@ Compared scores using seaborn pairplot
 
 Explored misaligned examples: 1-star with positive sentiment, 5-star with negative sentiment
 
-🧪 Model Evaluation
+## Model Evaluation
 Evaluated the RoBERTa sentiment predictions by mapping star ratings to binary sentiment (positive if score > 3):
 
-python
-Copy
-Edit
 from sklearn.metrics import classification_report
-
 y_true = results_df['Score'].apply(lambda x: 'positive' if x > 3 else 'negative')
 y_pred = results_df['roberta_pos'].apply(lambda x: 'positive' if x > 0.5 else 'negative')
-
 print(classification_report(y_true, y_pred))
-📈 Model Insights
+
+## Model Insights
 VADER is quick and rule-based, but lacks deep contextual understanding.
-
 RoBERTa shows much better context-aware performance.
-
 Edge cases revealed mismatches between star ratings and sentiment.
 
-🔧 Suggested Improvements
+## Suggested Improvements
 Fine-tune RoBERTa on this dataset for better alignment with Amazon-style reviews.
-
 Use stratified sampling to balance class distribution.
-
 Extend the model to support multilingual sentiment analysis (see below).
 
 🌍 Multilingual Extension
-To make the pipeline multilingual:
 
 ✅ Use a multilingual model:
-python
-Copy
-Edit
 MODEL = "cardiffnlp/twitter-xlm-roberta-base-sentiment"
 Supports over 100 languages.
-
 Works well on non-English product reviews or multilingual social media posts.
 
-🪜 Additional Steps
+## Additional Steps
 Include multilingual samples via translation (e.g., googletrans) or public datasets like amazon-massive, paws-x.
-
 Fine-tune the model on mixed-language datasets.
-
 Use a language detector (e.g., langdetect, langid, or Hugging Face papluca/xlm-roberta-base-language-detection) to switch models dynamically.
 
 💡 Insight
