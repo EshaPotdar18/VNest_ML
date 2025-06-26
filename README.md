@@ -1,4 +1,4 @@
-# 🤖 ML/NLP Engineer Intern Challenge – Sentiment Classification on Amazon Reviews
+# ML/NLP Engineer Intern Challenge – Sentiment Classification on Amazon Reviews
 
 ## 🎯 Objective  
 Build an end-to-end sentiment classification pipeline using both **NLTK** and **Hugging Face Transformers**. Showcase skills in data preprocessing, rule-based vs. transformer-based sentiment scoring, evaluation, and multilingual extension.
